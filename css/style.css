@@ -1,0 +1,12 @@
+tr{
+    text-align: center;
+}
+tbody tr {
+     text-align: right;
+ }
+tr:nth-child(even){
+    background-color: rgba(28, 255, 255, 0.31);
+}
+a{
+    color: black;
+}
