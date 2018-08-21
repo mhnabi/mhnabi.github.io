@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>MHNabi</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>حذف</th>
+                    <th>خلاصه نوشته</th>
+                    <th>ردیف</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="short">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, expedita!</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="short">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, iste.</td>
+                    <td>2</td>
+                </tr>
+                </tbody>
+            </table>
+            <script src="jquery-3.3.1.js"></script>
+            <script>
+                // $('<img>', {
+                //     src: "images/delete.png"
+                // }).insertAfter("td[class=del]");
+
+                $('tbody tr').each(function (i, v) {
+                    $(v).prepend("<td><img src='images/delete.png' width='30px' height='30px'></td>")
+
+                })
+
+                // var del_img = $("<td>", {
+                //     src: "images/delete.png",
+                //     style: "height:30px; width:30px"
+                // })
+                // $(".short").insertAfter("<td>del_img</td>")
+                //
+
+
+
+
+            </script>
+        </div>
+
+
+
+
+
+    </div>
+
+</body>
+</html>
