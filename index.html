@@ -15,6 +15,7 @@
 <body>
     <div class="container">
         <div class="table-responsive">
+            <h1 class="title"> به وب سایت محمد حسین نبی خوش آمدید</h1>
             <table class="table">
                 <thead>
                 <tr>
@@ -58,7 +59,7 @@
         // }).insertAfter("td[class=del]");
 
         $('tbody tr').each(function (i, v) {
-            $(v).prepend("<td><img src='images/delete.png' width='30px' height='30px'></td>")
+            $(v).prepend("<td><img class='delete_img' src='images/delete.png' width='30px' height='30px'></td>")
 
         })
 
@@ -68,6 +69,13 @@
         // })
         // $(".short").insertAfter("<td>del_img</td>")
         //
+
+        $('.delete_img').on('click', function(e) {
+            ans = confirm("می خواهید این ردیف را پاک کنید؟")
+            if (ans){
+                $(this).remove()
+            }
+        });
 
 
 
