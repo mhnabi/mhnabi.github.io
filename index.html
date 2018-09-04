@@ -13,16 +13,20 @@
 
 </head>
 <body>
+    <div class="overlay">
+        <div class="content"></div>
+        <span class="close">X</span>
+    </div>
     <div class="container">
         <div class="table-responsive">
             <h1 class="title"> به وب سایت محمد حسین نبی خوش آمدید</h1>
+
             <table class="table">
                 <thead>
                 <tr>
                     <th>حذف</th>
                     <th>خلاصه نوشته</th>
                     <th>ردیف</th>
-
                 </tr>
                 </thead>
                 <tbody>
@@ -52,40 +56,10 @@
         </div>
 
 
-
-
-
     </div>
     <script src="jquery-3.3.1.js"></script>
+    <script src="js/jscode.js"></script>
     <script>
-        // $('<img>', {
-        //     src: "images/delete.png"
-        // }).insertAfter("td[class=del]");
-
-        $('tbody tr').each(function (i, v) {
-            $(v).prepend("<td><img class='delete_img' src='images/delete.png' width='30px' height='30px'></td>")
-
-        })
-
-        // var del_img = $("<td>", {
-        //     src: "images/delete.png",
-        //     style: "height:30px; width:30px"
-        // })
-        // $(".short").insertAfter("<td>del_img</td>")
-        //
-
-        $('.delete_img').on('click', function(e) {
-            ans = confirm("می خواهید این ردیف را پاک کنید؟")
-            if (ans){
-                $(this).remove()
-            }
-        });
-
-        $('.short').on('click', function () {
-            var $this = $(this)
-            $('.complete').show()
-            // console.log($(this));
-        })
 
 
 

@@ -32,3 +32,29 @@ a{
     height: 500px;
     position: center;
 }
+
+.overlay {
+    height: 100%;
+    left: 0%;
+    right: 0%;
+    /*top:20px;*/
+    background: rgba(150, 150, 150, .7);
+    position: fixed;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    display: none;
+}
+.content{
+    width: 700px;
+    padding: 20px;
+    background: #ffff;
+    margin: auto;
+}
+.close {
+    position: absolute;
+    top:5px;
+    right: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}
